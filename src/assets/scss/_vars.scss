@@ -1,0 +1,32 @@
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+$black: #000;
+
+:root {
+  --primary: blue;
+  --secondary: #0d0d0d;
+  --white: #d2d2d2;
+  --red: #ed3024;
+  --blue: #3137c9;
+  --bs-font:
+    -apple-system,
+    "Segoe UI",
+    "Arial",
+    "Roboto",
+    "Helvetica Neue",
+    "Arial",
+    "Noto Sans",
+    "Liberation Sans",
+    "sans-serif",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --sidebar-width: 30em;
+  --z-index-sidebar: 1005;
+  --z-index-header: 999;
+  --z-index-modal: 1010;
+  --header-height: 4em;
+}

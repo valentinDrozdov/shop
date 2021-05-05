@@ -1,0 +1,26 @@
+@import "mixins/mixins";
+@import "vars";
+@import "vendor";
+@import "fonts";
+@import "settings";
+@import "fonts";
+
+html {
+  font-size: 10px;
+}
+
+body {1
+  &.no-scroll {
+    overflow: hidden;
+  }
+
+  @include breakpoint($lg) {
+    &.show-sidebar {
+      overflow: hidden;
+    }
+  }
+}
+
+@import "components/header";
+@import "components/burger";
+@import "components/footer";

@@ -1,0 +1,50 @@
+{
+  "name": "new-project",
+  "version": "0.0.1",
+  "description": "this is my project where I learn gulp in detail and practice making websites",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "gulp",
+    "scss"
+  ],
+  "author": "valentin drozdov",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "animate.css": "^4.1.1",
+    "autoprefixer": "^10.1.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svg-sprites": "^4.1.2",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttf2woff2": "^4.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
+    "pug": "^3.0.2",
+    "stylelint": "^13.9.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0",
+    "webpack": "^5.15.0",
+    "webpack-stream": "^6.1.1"
+  },
+  "dependencies": {}
+}

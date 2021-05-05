@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn--reset {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.container {
+  padding: 0 2.5em;
+  max-width: 165em;
+  margin: 0 auto;
+  width: 100%;
+}

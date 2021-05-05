@@ -1,0 +1,133 @@
+// .header {
+//   display: flex;
+//   align-items: center;
+//   font-size: 1.5em;
+//   color: white;
+//   background-color: var(--primary);
+//   height: 3em;
+
+//   &__inner {
+//     display: flex;
+//     justify-content: space-between;
+//   }
+
+//   &__list {
+//     display: flex;
+//     justify-content: end;
+
+//     &-item {
+//       & + & {
+//         margin-left: 1em;
+//       }
+//     }
+//   }
+// }
+
+.header {
+  position: relative;
+  z-index: 1003;
+  width: 100%;
+  background-color: #fff;
+  transition: all .3s ease-in-out;
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,.04);
+
+  &.fixed {
+    position: fixed;
+    z-index: 100;
+  }
+
+  &__inner {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: var(--header-height);
+  }
+
+  &__logo {
+    // @include breakpoint($tablet-bp) {
+    //   grid-column: 2;
+    // }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+
+    // @include breakpoint($tablet-bp) {
+    //   grid-column: 1;
+    // }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    max-width: 100%;
+
+    @include breakpoint($lg) {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      z-index: 1001;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      border-top: .05em solid var(--primary);
+      padding: 3em 0 4em 2em;
+      width: 100%;
+      box-shadow: 0 8px 14px 0 rgba(0,0,0,.04);
+      background-color: #fff;
+      opacity: 0;
+      visibility: none;
+      transform: translateX(-100%);
+      transition: opacity .4s ease-in-out;
+
+      .menu-opened & {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0%);
+      }
+    }
+
+    &-item {
+      font-size: 1.2em;
+      text-transform: uppercase;
+      color: #aaa;
+
+      a {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 110%;
+          z-index: 1002;
+          width: 0;
+          height: .2em;
+          background-color: #000;
+          transition: all .3s ease-in-out;
+        }
+
+        &.active::after {
+          width: 100%;
+          transition: all .3s ease-in-out;
+        }
+
+        &:hover::after {
+          width: 100%;
+          transition: all .3s ease-in-out;
+        }
+      }
+
+      & + & {
+        margin-left: 1.6em;
+
+        @include breakpoint($lg) {
+          margin: 1.6em 0 0 0;
+        }
+      }
+    }
+  }
+}

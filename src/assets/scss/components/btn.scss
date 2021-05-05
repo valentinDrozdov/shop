@@ -1,0 +1,43 @@
+.btn {
+  --background-color: var(--primary);
+  --background-color--white: var(--white);
+  --color: #cecece;
+  --color--white: var(--primary);
+
+  display: inline-block;
+  border: .153em solid var(--background-color);
+  padding: .9em;
+  min-width: 9.3em;
+  font-size: 1.3em;
+  text-align: center;
+  color: var(--color);
+  background-color: var(--background-color);
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color--white);
+    background-color: var(--background-color--white);
+  }
+
+  &--outline {
+    color: var(--color--white);
+    background-color: transparent;
+
+    &:hover {
+      color: var(--color);
+      background-color: var(--background-color);
+    }
+  }
+
+  &--autosize {
+    min-width: 0;
+  }
+
+  &--checkbox {
+    input:checked + & {
+      color: var(--color);
+      background-color: var(--background-color);
+    }
+  }
+}
